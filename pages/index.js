@@ -1,18 +1,23 @@
 import Link from "next/link"
+import Button from "../src/components/Button"
 
 const index = () => {
   return (
     <>
       <ol>
         <li>
-          <Link href={"/Login"}>
-            <a className="text-blue-600">Log in</a>
-          </Link>
+          <Button variant="primary" size="lg">
+            <Link href={"/Login"}>
+              <a>Sign in</a>
+            </Link>
+          </Button>
         </li>
         <li>
-          <Link href={"/Sign-up"}>
-            <a className="text-blue-600">Sign up</a>
-          </Link>
+          <Button variant="secondary" size="lg">
+            <Link href={"/signup"}>
+              <a>Sign up</a>
+            </Link>
+          </Button>
         </li>
       </ol>
     </>

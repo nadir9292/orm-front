@@ -38,6 +38,7 @@ const Login = () => {
             onSubmit={handleSubmit}
             initialValues={initialValues}
             validationSchema={validationSchema}
+            className="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4"
           >
             <FormField name="email" type="email">
               E-mail
@@ -49,7 +50,7 @@ const Login = () => {
               type="submit"
               //find a way to disable the button from the beginning
               disabled={isSubmitting || !isValid}
-              variant="btnValidation"
+              variant="btnSignIn"
               size="lg"
             >
               Log in

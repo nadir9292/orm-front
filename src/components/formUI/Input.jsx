@@ -7,7 +7,10 @@ const Input = (props) => {
     <input
       {...otherProps}
       className={classNames(
-        "block mt-2 border-2 border-slate-200 py-1 px-2",
+        "appearance-none rounded-none relative block w-full px-3 mt-1 mb-2" +
+          " py-2 border border-gray-300 placeholder-gray-500 text-gray-900" +
+          " rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" +
+          " focus: z - 10 sm: text - sm",
         className
       )}
     />
